@@ -1,126 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>Khaki 2.0 by MLPdesign</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="Description" lang="en" content="open source x/html and css templates">
-<meta name="author" content="mlp design">
-<meta name="robots" content="index, follow">
-<link rel="stylesheet" href="styles.css">
-</head>
-<body>
-<!--start wrapper-->
-<div id="wrapper">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>RsaChef</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="Description"
+      lang="en"
+      content="RSA CyberChef simple usage tutorial"
+    />
+    <meta name="author" content="Den Loob" />
+    <meta name="robots" content="index, follow" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="body">
+        <div id="banner">
+          <h1>RSA<em>Chef</em></h1>
+          <p>CyberChef's RSA usage tutorial</p>
+        </div>
 
-<!--start body-->
-<div id="body">
+        <div id="container">
+          <div id="content">
+            <div class="item">
+              <div id="cheatsheet">
+                <details>
+                  <summary>
+                    <span style="font-size: 150%">Cheatsheet</span>
+                  </summary>
+                  <hr />
+                  <h2>Free Text Sharing Websites</h2>
+                  <li><a href="https://eazychat.onrender.com/">EazyChat</a></li>
+                  <li><a href="https://tlk.io/">tlk.io</a></li>
+                  <h2>CyberChef</h2>
+                  <li>
+                    <a
+                      href="https://gchq.github.io/CyberChef/#recipe=Generate_RSA_Key_Pair('2048','PEM'))"
+                      >Key-Pair Generation</a
+                    >
+                  </li>
+                  <br />
+                  <li>
+                    <a
+                      href="https://gchq.github.io/CyberChef/#recipe=RSA_Encrypt('-----BEGIN%20RSA%20PUBLIC%20KEY-----','RSA-OAEP','SHA-256')"
+                      >Encrypt</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://gchq.github.io/CyberChef/#recipe=RSA_Decrypt(%27-----BEGIN%20RSA%20PRIVATE%20KEY-----%27,%27%27,%27RSA-OAEP%27,%27SHA-256%27)"
+                      >Decrypt</a
+                    >
+                  </li>
+                  <br />
+                  <li>
+                    <a
+                      href="https://gchq.github.io/CyberChef/#recipe=RSA_Encrypt('-----BEGIN%20RSA%20PUBLIC%20KEY-----','RSA-OAEP','SHA-256')To_Base64('A-Za-z0-9%2B/%3D')"
+                      >Encrypt (Base64)</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://gchq.github.io/CyberChef/#recipe=From_Base64('A-Za-z0-9%2B/%3D',true,true)RSA_Decrypt('-----BEGIN%20RSA%20PRIVATE%20KEY-----','','RSA-OAEP','SHA-256')"
+                      >Decrypt (Base64)</a
+                    >
+                  </li>
+                </details>
+              </div>
+              <br />
+              <br />
+              <br />
+              <h1 style="font-size: 185%">RSA</h1>
+              <hr />
+              <p>
+                <b>RSA</b> (<b>Rivest–Shamir–Adleman</b>) is a
+                <a
+                  href="https://en.wikipedia.org/wiki/Public-key_cryptography"
+                  title="Public-key cryptography"
+                  >public-key cryptosystem</a
+                >
+                that is widely used for secure data transmission. It is also one
+                of the oldest. The
+                <a href="https://en.wikipedia.org/wiki/Acronym" title="Acronym"
+                  >acronym</a
+                >
+                "RSA" comes from the surnames of
+                <a
+                  href="https://en.wikipedia.org/wiki/Ron_Rivest"
+                  title="Ron Rivest"
+                  >Ron Rivest</a
+                >,
+                <a
+                  href="https://en.wikipedia.org/wiki/Adi_Shamir"
+                  title="Adi Shamir"
+                  >Adi Shamir</a
+                >
+                and
+                <a
+                  href="https://en.wikipedia.org/wiki/Leonard_Adleman"
+                  title="Leonard Adleman"
+                  >Leonard Adleman</a
+                >, who publicly described the algorithm in 1977.
+              </p>
+              <br />
+              <h1 style="font-size: 185%">Video explanation</h1>
+              <hr />
+              <p>
+                I would highly recommend watching this clip from Computerphile's
+                <a href="https://www.youtube.com/watch?v=GSIDS_lvRv4"
+                  >Public Key Cryptography video</a
+                >
+              </p>
+              <video controls width="100%">
+                <source
+                  src="http://images.denloob.tk/r/KeyPairExplained.mp4"
+                  type="video/mp4"
+                />
+              </video>
+              <h1 style="font-size: 185%">Key Generation</h1>
+              <hr />
+              <p>
+                To generate the keys, visit the
+                <a
+                  href="https://gchq.github.io/CyberChef/#recipe=Generate_RSA_Key_Pair('2048','PEM'))"
+                  >CyberChef Website</a
+                >. The keys generated are completly unique and called key pair.
+              </p>
+              <p>
+                The second key, also called "the private key", should never be
+                shared with anyone that shouldn't read the encrypted messages.
+                If it does get shared they get access to all off messages sent
+                to you, and in this situation, you should
+                <strong>immediately</strong> regenerate the key pair.
+              </p>
 
-<!--start header-->
-<div id="banner">
-<h1>Khaki<em>Template</em> 2.0</h1>
-<p>The fluid, responsive, HTML5, CSS only (image-free) version of the classic free template by MLP Design.</p>
-<!-- menu -->
-<label for="show-menu" class="responsive">&#9776;</label>
-<input type="checkbox" id="show-menu" role="button">
-<ul id="topnav">
-<li><a class="active">Home</a></li>
-<li><a href="#">Page 2</a></li>
-<li><a href="#">Page 3</a></li>
-<li><a href="#">Page 4</a></li>
-<li><a href="#">Page 5</a></li>
-</ul>
-<!-- end menu -->
-</div>
-<!--end of header-->
-	<!--start sidebar-->
-	<div id="sidebar">
-		<h2>About</h2>
-		<p>This template, updated after almost 9 years since the original release in 2008, is released under the <a href="http://creativecommons.org/licenses/by-nc/3.0/">Creative Commons Attribution Non-Commercial License</a>. If you use it, you must retain the "Template Design by MLP Design" tag and link in place. You MAY NOT use the templates in adult or adult-oriented websites!</p>
-		<p>If you wish to use a template for commercial purposes or wish to remove the credit tag and link, please contact us.</p>
-		<h2>Categories</h2>
-		<ul>
-			<li><a href="#">Suspendisse potenti</a></li>
-			<li><a href="#">Proin sed pede</a></li>
-   			<li><a href="#">Maecenas ac nisi</a></li>
-   			<li><a href="#">Curabitur eget enim id</a></li>
-   			<li><a href="#">Nunc metus nisl dapibus</a></li>
-   			<li><a href="#">Fusce pellentesque odio sed</a></li>
-		</ul>
-		<h2>Archives</h2>
-		<ul>
-			<li><a href="#">2017-Sep</a></li>
-			<li><a href="#">2017-Aug</a></li>
-			<li><a href="#">2017-Jul</a></li>
-			<li><a href="#">2017-Jun</a></li>
-			<li><a href="#">2017-May</a></li>
+              <br />
 
-		</ul>
-		<h2>Links</h2>
-		<ul>
-			<li><a href="http://twitter.com/mlpdesign">Follow me on Twitter</a></li>
-			<li><a href="http://www.mlpdesign.net">MLP Design</a></li>
-		</ul>		
-	</div>
-	<div class="clear"></div>
-	<!--end of sidebar-->
+              <h1 style="font-size: 185%">Encryption</h1>
+              <hr />
+              <p>
+                To encrypt some text you will need the public-key of the
+                <strong>recipient</strong>. After inputing the public-key on
+                <a
+                  href="https://gchq.github.io/CyberChef/#recipe=RSA_Encrypt('-----BEGIN%20RSA%20PUBLIC%20KEY-----','RSA-OAEP','SHA-256')"
+                  >the website</a
+                >
+                you can put any text and get the encrypted message.
+              </p>
+              <details>
+                <summary><span id="example">Show Example</span></summary>
+                <img
+                  src="examples/encryption.png"
+                  alt="encrypting 'Hello world' with RSA"
+                  width="100%"
+                  height="100%"
+                />
+              </details>
+              <br />
+              <h1 style="font-size: 185%">Decryption</h1>
+              <hr />
+              <p>
+                To decrypt a message you recived, input your private key and the
+                encrypted message
+                <a
+                  href="https://gchq.github.io/CyberChef/#recipe=RSA_Decrypt(%27-----BEGIN%20RSA%20PRIVATE%20KEY-----%27,%27%27,%27RSA-OAEP%27,%27SHA-256%27)"
+                  >here</a
+                >.
+              </p>
+              <details>
+                <summary><span id="example">Show Example</span></summary>
+                <img
+                  src="examples/decryption.png"
+                  alt="decrypting 'Hello world' with RSA"
+                  width="100%"
+                  height="100%"
+                />
+              </details>
+              <br />
+              <h1 style="font-size: 185%">Sharing</h1>
+              <hr />
+              <p>
+                When you want to send your encrypted data, you have two options,
+                to send the raw bytes using file, or you can convert the data to
+                Base64 and share it using any chat app.
+              </p>
+              <h2>Raw Bytes</h2>
+              <p>
+                After encrypting the data, just click the save button and share
+                it with any file sharing app.
+              </p>
+              <img src="examples/save_button.png" , alt="save button" />
+              <h2>Base64</h2>
+              <p>
+                Base64 can store any data using regular letters that can be
+                shared on any chatting app. To convert raw bytes to Base64, drag
+                the Base64 operation to the end of your encryption Recipe or to
+                the start if you are decrypting. You can find the premade links
+                in the cheatsheet.
+              </p>
+              <details>
+                <summary><span id="example">Show Example</span></summary>
+                <img
+                  src="examples/base64.png"
+                  alt="base64 example"
+                  width="100%"
+                  height="100%"
+                />
+              </details>
+            </div>
+          </div>
+        </div>
+      </div>
 
-	<!--start containter-->
-	<div id="container">
-			
-		<!--start content-->
-		<div id="content">
-			<!--post item-->
-			<div class="item">
-				<h1>Sample paragraph, blockquote, and list</h1>
-				<p>This template, updated after almost 9 years since the original release in 2008, is released under the <a href="http://creativecommons.org/licenses/by-nc/3.0/">Creative Commons Attribution Non-Commercial License</a>. If you use it, you must retain the "Template Design by MLP Design" tag and link in place. You MAY NOT use the templates in adult or adult-oriented websites!</p>
-				<p>If you wish to use a template for commercial purposes or wish to remove the credit tag and link, please contact us.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				<blockquote><p>Proin congue risus eget eros. Morbi ornare, enim ac convallis pellentesque, metus arcu sagittis diam, nec fringilla nunc eros id arcu. Nunc sagittis ligula id justo. Nam et pede a mi facilisis consequat. Quisque tincidunt, turpis vel commodo lacinia, arcu odio bibendum metus, eget elementum ipsum eros sit amet velit.</p></blockquote>
-				<ul>
-					<li>Mauris in lacus</li>
-					<li>Sed ullamcorper bibendum libero</li>
-					<li>Morbi fringilla imperdiet lorem</li>
-					<li>In cursus mi posuere augue</li>
-				</ul>
-				<span>17 March 2017 @ 1:28 PM | <a href="#">0 Comment(s)</a> | Posted by <a href="#">webmasterneo</a></span>
-			</div>
-			<!--another post item-->
-			<div class="item">
-				<h1>Space fillers</h1>
-				<p>Donec non dui. Morbi fringilla imperdiet lorem. Fusce risus diam, rutrum eu, hendrerit et, accumsan non, neque. Fusce vitae pede ut massa sodales mattis. Nulla sed justo. Integer nec sem vel tellus tempor gravida. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc faucibus. Nullam nulla ipsum, accumsan sed, tempus sed, adipiscing a, metus. Curabitur varius commodo eros.</p>
-				<span>17 March 2017 @ 6:24 PM | <a href="#">0 Comment(s)</a> | Posted by <a href="#">webmasterneo</a></span>
-			</div>
-			<!--end of another post item-->			
-		</div>
-		<!--end of content-->
-
-	</div>
-	<!--end of container-->
-
-</div>
-<!--end of body-->
-
-	<!--start footer-->
-	<div id="footer">
-		<span class="left">2017 &copy; Copyright <a href="#">Your Name</a>. All rights reserved.</span>
-		<span class="right"><a href="#">Contact</a> | <a href="#">Site Map</a></span>
-		<p class="show-footer">2017 &copy; Copyright <a href="#">Your Name</a>. All rights reserved.<br /><a href="#">Contact</a> | <a href="#">Site Map</a></p>
-	</div>
-	<!--end of footer-->	
-
-</div>
-<!--end of wrapper-->
-
-	<!--start credits-->
-	<!--//Under CC-NC 3.0, this portion must be left intact and must not be hidden.//-->
-	<div id="credits">
-	<span><a href="http://www.mlpdesign.net" title="CSS &amp; HTML by MLP Design.net">CSS &amp; HTML</a> by MLP Design<br />Licensed under <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/">Creative Commons Attribution-NonCommercial 3.0</a>.</span>
-	</div>
-	<!--end of credits-->
-	
-</body>
-
+      <div id="footer">
+        <span class="left"
+          >2022 &copy; Copyright <a href="#">Den Loob</a>. All rights
+          reserved.</span
+        >
+        <span class="right"
+          ><a href="https://github.com/Denloob">Contact</a></span
+        >
+        <p class="show-footer">
+          2022 &copy; Copyright <a href="#">Den Loob</a>. All rights
+          reserved.<br /><a href="/">Contact</a>
+        </p>
+      </div>
+    </div>
+    <div class="credits">
+      <div>
+        <span
+          ><a
+            href="http://www.mlpdesign.net"
+            title="CSS &amp; HTML by MLP Design.net"
+            >CSS &amp; HTML</a
+          >
+          by MLP Design<br />Licensed under
+          <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/"
+            >Creative Commons Attribution-NonCommercial 3.0</a
+          >.</span
+        >
+      </div>
+    </div>
+  </body>
 </html>
-
