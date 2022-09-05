@@ -397,7 +397,7 @@ video {
   display: none;
 }
 
-.credits {
+#credits {
   width: 90%;
   background-color: inherit;
   color: #999;
@@ -409,13 +409,13 @@ video {
   text-align: right;
 }
 
-.credits a {
+#credits a {
   background-color: inherit;
   color: #999;
   text-decoration: none;
 }
 
-.credits a:hover {
+#credits a:hover {
   background-color: inherit;
   color: #fff;
   text-decoration: none;
@@ -518,7 +518,7 @@ video {
   #footer p.show-footer {
     display: block;
   }
-  .credits {
+  #credits {
     font-size: 80%;
     text-align: center;
   }
